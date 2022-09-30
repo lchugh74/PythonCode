@@ -1,5 +1,5 @@
 import requests
-dfile = open("datafile.txt")
+dfile = open("datafile.txt" , "rb")
 url = "http://httpbin.org/post"
 test_res = requests.post(url, files = {"form_field_name": dfile})
 if test_res.ok:
